@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".loginwithP">
+
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+       <com.google.android.material.textview.MaterialTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/_20sdp"
+           android:layout_gravity="center"
+           android:textStyle="bold"
+           android:textColor="#3D54DB"
+           android:text="paisa"/>
+
+       <com.google.android.material.textview.MaterialTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/_20sdp"
+           android:layout_gravity="center"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:text="bazaarApp"/>
+
+
+    </LinearLayout>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="#090961"
+        android:textStyle="bold"
+        android:text="Login with Mobile Number" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailForgetTV"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        android:hint="Mobile Number "
+        app:startIconDrawable="@drawable/picon"
+        app:endIconMode="clear_text"
+        android:layout_marginEnd="@dimen/_15sdp">
+
+       <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/mono"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:inputType="number"
+           android:maxLength="10"
+           android:lines="1">
+       </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextttt"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cornerRadius="5dp"
+        app:iconPadding="8dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#001FCC"
+        android:text="Send OTP" />
+    <LinearLayout
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+       <com.google.android.material.textview.MaterialTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/_10ssp"
+           android:text="By continuing , you agree with our"/>
+
+       <com.google.android.material.textview.MaterialTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#1A51B1"
+           android:textSize="@dimen/_10ssp"
+           android:text=" Privacy Policy, Credit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+       <com.google.android.material.textview.MaterialTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/_10ssp"
+           android:textColor="#1A51B1"
+           android:text="Report Terms of Use " />
+
+       <com.google.android.material.textview.MaterialTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/_10ssp"
+           android:text=" and"/>
+
+       <com.google.android.material.textview.MaterialTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#1A51B1"
+           android:textSize="@dimen/_10ssp"
+           android:text=" Terms of Use"/>
+    </LinearLayout>
+
+
+
+ </LinearLayout>
+
+
+
+</LinearLayout>

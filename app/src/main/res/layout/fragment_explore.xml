@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ExploreFragment">
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginStart="@dimen/_10sdp"
+                  >
+                  <com.google.android.material.textview.MaterialTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textSize="@dimen/_15sdp"
+                      android:textColor="@color/black"
+                      android:text="Hey "/>
+
+                  <com.google.android.material.textview.MaterialTextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/black"
+                      android:textSize="@dimen/_15sdp"
+                      android:textStyle="bold"
+                      android:text="Salim!"/>
+
+              </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/_10sdp"
+                   android:orientation="horizontal">
+
+                   <com.google.android.material.textview.MaterialTextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/_13sdp"
+                       android:text="Good to see you back again "/>
+
+                   <ImageView
+                       android:id="@+id/ntfncn"
+                       android:layout_width="wrap_content"
+                       android:layout_height="20dp"
+                       android:layout_gravity="center"
+                       android:layout_marginStart="@dimen/_80sdp"
+                       android:src="@drawable/ntfcn" />
+               </LinearLayout>
+           </LinearLayout>
+
+        <HorizontalScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/imageContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/openfinance"
+                    android:layout_marginEnd="16dp"/>
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/imageonew"
+                    android:layout_marginEnd="16dp"/>
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/seccc"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:text="POPULAR PRODUCTS" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/recyclerviewww"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:nestedScrollingEnabled="false" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:text="INSURANCE AND INVESTMENTS" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/recyclerviewsecond"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:nestedScrollingEnabled="false" />
+
+                <com.google.android.material.textview.MaterialTextView
+
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:text="TOOLS AND CALCULATORS" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/recyclerviewthird"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/_13sdp"-->
+<!--                android:layout_marginStart="@dimen/_15sdp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="POPULAR PRODUCTS" />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/recyclerviewww"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_marginStart="@dimen/_15sdp"-->
+<!--                android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/_13sdp"-->
+<!--                android:layout_marginStart="@dimen/_15sdp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="INSURANCE AND INVESTMENTS" />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_15sdp"-->
+<!--                android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                android:id="@+id/recyclerviewsecond" />-->
+
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="@dimen/_13sdp"-->
+<!--                android:layout_marginStart="@dimen/_15sdp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="Tools and Calculators" />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_15sdp"-->
+<!--                android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                android:id="@+id/recyclerviewthird" />-->
+<!--        </LinearLayout>-->
+    </LinearLayout>
+
+
+
+</FrameLayout>

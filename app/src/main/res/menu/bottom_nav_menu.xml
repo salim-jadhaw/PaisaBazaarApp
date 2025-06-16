@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/explore"
+        android:icon="@drawable/exploreicon"
+        android:title="Explore"/>
+
+    <item
+        android:id="@+id/creditscore"
+        android:icon="@drawable/creditscore"
+        android:title="Credit Score "/>
+
+    <item
+        android:id="@+id/myaccountt"
+        android:icon="@drawable/myaccountt"
+        android:title="My Account" />
+
+</menu>
+
