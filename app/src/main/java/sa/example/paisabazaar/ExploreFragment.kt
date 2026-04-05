@@ -68,7 +68,7 @@ class ExploreFragment : Fragment() {
         imageAdapter = ImageAdapterClass(personList)
         recyclerView.adapter = imageAdapter
 
-        // second recyyclerviewww
+         
 
         val personList1 = listOf(
             SecondImageModel(R.drawable.healthinsurance, "Health \nInsurance"),
