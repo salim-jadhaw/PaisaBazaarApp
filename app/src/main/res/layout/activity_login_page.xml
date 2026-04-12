@@ -9,6 +9,8 @@
     android:background="@color/white"
     tools:context=".LoginPage">
 
+    
+
     <LinearLayout
         android:layout_marginTop="@dimen/_60sdp"
         android:layout_width="wrap_content"
@@ -24,6 +26,8 @@
             android:textStyle="bold"
             android:textColor="#3D54DB"
             android:text="paisa"/>
+
+        
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
