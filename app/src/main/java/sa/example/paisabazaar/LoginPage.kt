@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import sa.example.paisabazaar.databinding.ActivityLoginPageBinding
 
+
 class LoginPage : AppCompatActivity() {
 
     private lateinit var binding : ActivityLoginPageBinding
